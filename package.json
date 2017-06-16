@@ -1,0 +1,51 @@
+{
+  "name": "amigopay",
+  "version": "0.0.1",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "npm run build && npm run tslint",
+    "build": "npm run build-ts",
+    "build-ts": "tsc -p .",
+    "test": "jest",
+    "tslint": "tslint -c tslint.json -p tsconfig.json"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/suyu0925/amigopay.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/suyu0925/amigopay/issues"
+  },
+  "homepage": "https://github.com/suyu0925/amigopay#readme",
+  "devDependencies": {
+    "@types/jest": "^19.2.4",
+    "@types/node": "^7.0.31",
+    "@types/request": "0.0.44",
+    "debug": "^2.6.8",
+    "dotenv": "^4.0.0",
+    "jest": "^20.0.4",
+    "ts-jest": "^20.0.6",
+    "tslint": "^5.4.3",
+    "typescript": "^2.3.4"
+  },
+  "dependencies": {
+    "moment": "^2.18.1",
+    "request": "^2.81.0"
+  },
+  "jest": {
+    "transform": {
+      "^.+\\.tsx?$": "<rootDir>/node_modules/ts-jest/preprocessor.js"
+    },
+    "testRegex": "(/test/.*|\\.(test|spec))\\.(ts|tsx|js)$",
+    "moduleFileExtensions": [
+      "ts",
+      "tsx",
+      "js",
+      "json"
+    ]
+  }
+}
